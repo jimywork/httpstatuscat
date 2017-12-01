@@ -25,3 +25,10 @@
 .status.green {
 	color: #39bf1e;
 }
+.cat {
+	width: 389px;
+	height: auto;
+	margin: 0px auto;
+	margin-bottom: 15px;
+	display: block;
+}

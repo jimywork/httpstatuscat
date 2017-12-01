@@ -29,7 +29,7 @@
 		</div>
 		<div class="content">
 
-			<img class="" src="https://media.giphy.com/media/G3773sSDJHHy0/giphy.gif" width="100%" height="715px">
+			<img src="https://media.giphy.com/media/Z8MYSDbE8VFqo/giphy.gif" class="cat">
 			<br>
 			<br>
 			<p>The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it shouldn't send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server doesn't support expectations (this is the case, for example, of HTTP/1.0 servers). </p>
@@ -43,7 +43,7 @@
 			<h1>101 Switching Protocols</h1>
 		</div>
 		<div class="content">
-			<img class="" src="https://media.giphy.com/media/ExMGjbktr4phe/giphy.gif" width="100%" height="715px">
+			<img src="https://media.giphy.com/media/iVLwTiWz4qA7K/giphy-downsized-large.gif" class="cat">
 			<p>The requester has asked the server to switch protocols and the server has agreed to do so. </p>
 			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
 		</div>
@@ -55,8 +55,44 @@
 			<h1>102 Processing</h1>
 		</div>
 		<div class="content">
-			<img class="" src="https://media.giphy.com/media/5r5J4JD9miis/giphy.gif" width="100%" height="715px">
+			<img src="https://media.giphy.com/media/5r5J4JD9miis/giphy.gif" class="cat">
 			<p>A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost. </p>
+			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
+		</div>
+	</div>
+
+	<!-- 200 OK -->
+	<div class="ui basic modal" id="great">
+		<div class="ui icon header">
+			<h1>200 OK</h1>
+		</div>
+		<div class="content">
+			<img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" class="cat">
+			<p>Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action. </p>
+			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
+		</div>
+	</div>
+
+	<!-- 201 Created -->
+	<div class="ui basic modal" id="created">
+		<div class="ui icon header">
+			<h1>201 Created</h1>
+		</div>
+		<div class="content">
+			<img src="https://media.giphy.com/media/RdzzVrtvfqnM4/giphy.gif" class="cat">
+			<p>The request has been fulfilled, resulting in the creation of a new resource. </p>
+			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
+		</div>
+	</div>
+
+	<!-- 202 Accept -->
+	<div class="ui basic modal" id="accepted">
+		<div class="ui icon header">
+			<h1>202 Accepted</h1>
+		</div>
+		<div class="content">
+			<img src="https://media.giphy.com/media/q5D43XCcHr8v6/giphy.gif" class="cat">
+			<p>TThe request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs. </p>
 			<span><a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">Font Wikipedia</a></span>
 		</div>
 	</div>
@@ -67,7 +103,7 @@
 				<p>Contribute on github  — <b><a href="https://github.com/evilsocketbr/httpstatuscat">https://evilsocketbr.github.io/...</a></b></p>
 			</div>
 			<div class="share">
-				<a href="https://twitter.com/intent/tweet?hashtags=httpstatuses&amp;text=Helpful%20HTTP%20Status%20Code%20reference%20site&amp;url=https%3A%2F%2Fhttpstatuses.com&amp;via=webpagefx" class="twitter"> <b>Share on Twitter</b></a>
+				<a href="https://twitter.com/intent/tweet?hashtags=httpstatuses&amp;text=Helpful%20HTTP%20Status%20Code%20reference%20site&amp;url=https://github.com/evilsocketbr/httpstatuscat&amp;via=evilsocketbr" class="twitter"> <b>Share on Twitter</b></a>
 			</div>
 		</div>
 	</div>
@@ -87,15 +123,9 @@
 		<div class="ui divider"></div>
 		<h3>Available status codes:</h3>
 
-	<!-- 	<div class="gifs">
-			<div class="ui small rounded images">
-			  <img class="ui image" src="https://media.giphy.com/media/G5h04AkAvAHcs/giphy.gif">
-			  <img class="ui image" src="https://media.giphy.com/media/G5h04AkAvAHcs/giphy.gif">
-			  <img class="ui image" src="https://media.giphy.com/media/G5h04AkAvAHcs/giphy.gif">
-			</div>
-		</div> -->
 
 		<h4>1×× Informational responses</h4>
+		<p>An informational response indicates that the request was received and understood. It is issued on a provisional basis while request processing continues. It alerts the client to wait for a final response. The message consists only of the status line and optional header fields, and is terminated by an empty line. As the HTTP/1.0 standard did not define any 1xx status codes, servers must not[note 1] send a 1xx response to an HTTP/1.0 compliant client except under experimental conditions.</p>
 		<div class="ui cards">
 			<div class="ui card">
 				<div class="content">
@@ -128,6 +158,43 @@
 				</div>
 			</div>
 		</div>
+
+		<h4>2×× Success</h4>
+		<p>This class of status codes indicates the action requested by the client was received, understood, accepted, and processed successfully.</p>
+
+			<div class="ui cards">
+			<div class="ui card">
+				<div class="content">
+					<div class="header">200 OK</div>
+					<div class="ui divider"></div>
+					<div class="meta">Standard response for successful HTTP requests. The actual response will depend on the request method used. </div> 
+					<span>
+						<a href="#" class="cats" modal="great">See the cat</a>
+					</span>
+				</div>
+			</div>
+			<div class="ui card">
+				<div class="content">
+					<div class="header">201 Created</div>
+					<div class="ui divider"></div>
+					<div class="meta">The request has been fulfilled, resulting in the creation of a new resource.</div> 
+					<span>
+						<a href="#" class="cats" modal="created">See the cat</a>
+					</span>
+				</div>
+			</div>
+			<div class="ui card">
+				<div class="content">
+					<div class="header">202 Accepted</div>
+					<div class="ui divider"></div>
+					<div class="meta">The request has been accepted for processing, but the processing has not been completed. </div> 
+					<span>
+						<a href="#" class="cats" modal="accepted">See the cat</a>
+					</span>
+				</div>
+			</div>
+		</div>
+
 
 	
 	<div class="ui container fluid">
