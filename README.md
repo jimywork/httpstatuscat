@@ -1,4 +1,4 @@
-# <img src="https://github.com/6IX7ine/httpstatuscat/assets/logo.png" />  HTTP Cats with gifs 
+# <img src="https://github.com/6IX7ine/httpstatuscat/blob/master/assets/logo.png" />  HTTP Cats with gifs 
 
 HTTP Cats with gifs is an easy to reference database of HTTP Status Codes with gifs and cats. with their definitions and helpful code references all in one place.
 
