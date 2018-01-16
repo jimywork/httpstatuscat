@@ -38,6 +38,3 @@ HTTP Cats with gifs is an easy to reference database of HTTP Status Codes with g
  ## Donations
 * XMR: `49m12JEEC6HPCHkLMX5QL4SrDQdKwh6eb4Muu8Z9CwA9MwemhzFQ3VcgHwyuR73rC22WCymTUyep7DVrfN3GPt5JBCekPrR `
 
-## Contacts
-* evilsocketbr@gmail.com
-* [twitter](https://www.twitter.com/evilsocketbr)
